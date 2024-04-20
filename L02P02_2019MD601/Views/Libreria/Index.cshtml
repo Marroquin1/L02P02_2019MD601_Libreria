@@ -1,0 +1,62 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>CREACION DE LIBROS</h1>
+<br>
+
+<!-- Formulario para agregar libros -->
+<form asp-action="CrearLibros">
+
+    <div class="form-group row mb-4">
+        <div class="col-sm-2">
+            <label>Nombre del libro</label>
+            <input type="text" class="form-control" name="txtUserName" value="Valor de prueba">
+        </div>
+        <div class="col-sm-2">
+            <label>Descripción</label>
+        </div>
+        <div class="col-sm-4">
+            <textarea class="form-control" name="descripcion" placeholder="Ingrese la descripción"></textarea>
+        </div>
+        <div class="col-sm-2">
+            <label>Precio</label>
+            <input type="text" class="form-control" name="precio">
+        </div>
+        <div class="col-sm-2">
+            <label>Autor</label>
+            <select class="form-control" name="autor_id">
+                <option>Seleccione un autor</option>
+                <!-- Aquí deberías generar las opciones de autor -->
+            </select>
+        </div>
+        <div class="col-sm-2">
+            <label>Categoría</label>
+            <select class="form-control" name="categoria_id">
+                <option>Seleccione una categoría</option>
+                <!-- Aquí deberías generar las opciones de categoría -->
+            </select>
+        </div>
+        <div class="col-sm-4">
+            <input type="submit" class="btn btn-primary" value="Guardar">
+        </div>
+    </div>
+</form>
+
+<br>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Libro</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Autor</th>
+            <th>Categoría</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Aquí deberías iterar sobre los libros y mostrarlos en la tabla -->
+    </tbody>
+</table>
